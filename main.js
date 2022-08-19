@@ -79,7 +79,7 @@ const getMultipleBurgers = () => {
                     addressBooks3.push(data[index].name)
                 })   
             const clippedAddress = _.shuffle(addressBooks3)    
-            assert.notEqual(addressBooks3, clippedAddress)
+            assert.notEqual(JSON.stringify(addressBooks3), JSON.stringify(clippedAddress))
             })
         })
     })
